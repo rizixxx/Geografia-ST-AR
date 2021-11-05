@@ -10,15 +10,21 @@ public class Flyaround : MonoBehaviour
         
     }
     public Transform target;
+    public float x;
+    float z;
+    float y;
     // Update is called once per frame
     void Update()
     {
-        Vector3 relativePos = (target.position + new Vector3(0, 0, 0)) - transform.position;
+        y = x - (2 * Time.deltaTime);
+        
+        Vector3 relativePos = (target.position + new Vector3(y, y, 0)) - transform.position;
         Quaternion rotation = Quaternion.LookRotation(relativePos);
 
         Quaternion current = transform.localRotation;
 
         transform.localRotation = Quaternion.Slerp(current, rotation, Time.deltaTime);
-        transform.Translate(0, 0,  1.7f *Time.deltaTime);
+        transform.Translate(0, 0, x *Time.deltaTime);
+        
     }
 }
