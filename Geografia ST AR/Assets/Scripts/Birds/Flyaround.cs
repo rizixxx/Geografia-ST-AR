@@ -16,7 +16,7 @@ public class Flyaround : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        y = x - (2 * Time.deltaTime);
+        y = x + (2 * Time.deltaTime);
         
         Vector3 relativePos = (target.position + new Vector3(y, y, 0)) - transform.position;
         Quaternion rotation = Quaternion.LookRotation(relativePos);
