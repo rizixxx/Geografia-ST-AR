@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class LoadFirstChapter : MonoBehaviour
 {
-
-    public void LoadScene(string sceneName)
+   
+    public void LoadScene(string scene)
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(scene);
     }
 
 }
