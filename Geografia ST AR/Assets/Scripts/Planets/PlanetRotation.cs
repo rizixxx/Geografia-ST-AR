@@ -10,10 +10,10 @@ public class PlanetRotation : MonoBehaviour
     {
         
     }
-
+    float RotateSpeed = -25.0f;
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(rotateChange);
+        transform.Rotate(transform.right * -1 * RotateSpeed * Time.deltaTime);
     }
 }
