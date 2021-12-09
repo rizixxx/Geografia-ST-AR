@@ -5,15 +5,24 @@ using UnityEngine;
 public class PlanetRotation : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Vector3 rotateChange;
+    
     void Start()
     {
         
     }
     float RotateSpeed = -25.0f;
+    public float side;
+    public string scene;
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(transform.right * -1 * RotateSpeed * Time.deltaTime);
+        if (scene.Equals("main"))
+        {
+            transform.Rotate(transform.right * side * RotateSpeed * Time.deltaTime);
+        }
+        else
+        {
+            transform.Rotate(transform.up * side * RotateSpeed * Time.deltaTime);
+        }
     }
 }

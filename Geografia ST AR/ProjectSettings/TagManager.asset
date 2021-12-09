@@ -3,7 +3,32 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Sun
+  - first_button
+  - Neptune
+  - Neptune_Planet
+  - Mercury
+  - Mercury_Planet
+  - Saturn_Planet
+  - Saturn_Ring
+  - Saturn
+  - Venus
+  - Venus_Planet
+  - Earth
+  - Earth_Planet
+  - Jupiter
+  - Jupiter_Planet
+  - Uranus
+  - Uranus_Planet
+  - Mars
+  - Mars_Planet
+  - Shelf
+  - Play_Button
+  - Game_Info
+  - Points
+  - Score_info
+  - Score_Message
   layers:
   - Default
   - TransparentFX
