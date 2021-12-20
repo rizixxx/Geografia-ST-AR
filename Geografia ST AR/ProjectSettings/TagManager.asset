@@ -29,6 +29,7 @@ TagManager:
   - Points
   - Score_info
   - Score_Message
+  - Board
   layers:
   - Default
   - TransparentFX
