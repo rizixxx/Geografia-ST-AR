@@ -46,15 +46,18 @@ public class PlanetGame : MonoBehaviour
 
             GameObject.FindGameObjectWithTag(planet_container).transform.localPosition = position[ind, 0];
             GameObject.FindGameObjectWithTag(planet_container).transform.localScale = position[ind, 1];
+            
             try
             {
                 dissolve_enable(planet);
+                
                 if (!planet_extra.Equals(""))
                 {
                     dissolve_enable(planet_extra);
                 }
                 planetsOrbit_enable(planet_container);
-            }
+            GameObject.FindGameObjectWithTag(planet).GetComponent<SphereCollider>().enabled = false;
+        }
             catch
             {
                 Debug.LogError("Script not found on current Object.");
@@ -89,7 +92,7 @@ public class PlanetGame : MonoBehaviour
         {
             mymessage.text = "<b>Πολύ καλά!</b> \n\nΤο σκορ σας είναι <b>" + points + "/100</b> πόντοι!";
         }
-        if (points <= 100)
+        else
         {
             mymessage.text = "<b>Άριστα!</b> \n\nΤο σκορ σας είναι \n<b>" + points + "/100</b> πόντοι!";
         }

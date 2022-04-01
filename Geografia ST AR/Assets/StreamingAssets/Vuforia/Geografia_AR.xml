@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="plan_test2" size="5.000000 3.981959" />
-    <ImageTarget name="test_plan2" size="5.000000 5.211581" />
-    <ImageTarget name="test_plan" size="5.000000 6.316568" />
-    <ImageTarget name="galaxy_target" size="5.000000 2.115108" />
-    <ImageTarget name="perifora_target" size="5.000000 4.265988" />
-    <ImageTarget name="earth_target" size="5.000000 5.000000" />
+    <ImageTarget name="i03_quiz" size="5.000000 2.107914" />
+    <ImageTarget name="i03_mapPerYear" size="5.000000 2.845787" />
+    <ImageTarget name="i04_travel" size="5.000000 3.235759" />
+    <ImageTarget name="i03_mapDensity" size="5.000000 3.041908" />
+    <ImageTarget name="i02_quiz" size="5.000000 5.192660" />
+    <ImageTarget name="i02_travel" size="5.000000 2.680000" />
+    <ImageTarget name="i01_planetGame" size="5.000000 3.981959" />
+    <ImageTarget name="i01_perifora" size="5.000000 4.265988" />
+    <ImageTarget name="i01_earthVideo" size="5.000000 5.000000" />
   </Tracking>
 </QCARConfig>

@@ -15,12 +15,15 @@ public class QuizManager : MonoBehaviour
     public GameObject canv;
     private Text mypoints;
     private Text mymessage;
+    private double points = 0;
+    public Button reload;
     private void Start()
     {
         generateQuestion();
         ob = new AnswerScript();
         mypoints = GameObject.FindGameObjectWithTag("Points").GetComponent<Text>();
         mymessage = GameObject.FindGameObjectWithTag("Score_Message").GetComponent<Text>();
+        reload.gameObject.SetActive(false);
     }
 
     public  void correct()
@@ -30,15 +33,17 @@ public class QuizManager : MonoBehaviour
         if (index < 10)
         {
             generateQuestion();
-            mypoints.text = ob.getPoints().ToString();
         }
         else
         {
+            reload.gameObject.SetActive(true);
             Destroy(GameObject.FindGameObjectWithTag("Board"));
             message();
             canv.GetComponent<Canvas>().enabled = true;
             
         }
+        points = ob.getPoints();
+        mypoints.text = points.ToString();
     }
     void setAnswers()
     {
@@ -70,7 +75,7 @@ public class QuizManager : MonoBehaviour
     }
     public void message()
     {
-        double points = ob.getPoints();
+        
         if (points <= 50)
         {
             mymessage.text = "<b>Προσπαθήστε ξανά!</b> \n\nΤο σκορ σας είναι <b>" + points + "/100</b> πόντοι!";
@@ -87,7 +92,7 @@ public class QuizManager : MonoBehaviour
         {
             mymessage.text = "<b>Πολύ καλά!</b> \n\nΤο σκορ σας είναι <b>" + points + "/100</b> πόντοι!";
         }
-        if (points <= 100)
+        else 
         {
             mymessage.text = "<b>Άριστα!</b> \n\nΤο σκορ σας είναι \n<b>" + points + "/100</b> πόντοι!";
         }
