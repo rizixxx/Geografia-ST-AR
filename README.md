@@ -2,7 +2,8 @@
 
 Διπλωματική εργασία του τμήματος Μηχανικών Πληροφορικής και Ηλεκτρονικών Συστημάτων του ΔΙ.ΠΑ.Ε. (Σίνδος)
 ![image](https://user-images.githubusercontent.com/53174693/228660391-1838da1a-46cf-4173-a282-88e94a438e2d.png)
-
+![image](https://user-images.githubusercontent.com/53174693/228660527-df7b92b7-5e42-4393-b5f8-d746edfb0ec2.png)
+![image](https://user-images.githubusercontent.com/53174693/228660553-f5a23b5a-7ac0-4a8b-bec5-2c1de05c2370.png)
 
 Greek
 
